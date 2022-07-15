@@ -58,7 +58,7 @@ export default function Result({ data, setData }) {
           () => {
             setData(null);
           }
-        } className="
+        } className="mt-5
                     px-6
                     py-2.5
                     bg-blue-600
