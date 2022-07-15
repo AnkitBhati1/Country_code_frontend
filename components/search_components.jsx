@@ -10,24 +10,14 @@ export default function Search({setData}) {
     if (value.length === 0) {
       setError("Please enter a country");
       return false;
-    }
-    setError(null);
-    return true;
+    } 
   }
-
-  useEffect(() => {
-    if (error) {
-      console.log(error);
-    }
-  }
-  , [error]);
-
 
 
   const myfunction = (e) => {
     e.preventDefault(); 
     const country_name = e.target.elements.country.value;
-    setError(validate(country_name))
+    validate(country_name)
     fetch (`https://sproutacademy.in/api/`, {
       method:"POST",
       headers:{
