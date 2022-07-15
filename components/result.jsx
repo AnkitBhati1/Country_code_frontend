@@ -1,6 +1,6 @@
 import Map from './Map';
 
-export default function Result({ data }) {
+export default function Result({ data, setData }) {
 
   console.log(data);
   const {continent,country,alpha_2, alpha_3, density,land_area,latitude , longitude, population } = data[0];
@@ -53,6 +53,28 @@ export default function Result({ data }) {
             </tr>
           </tbody>
         </table>
+
+        <button onClick={
+          () => {
+            setData(null);
+          }
+        } className="
+                    px-6
+                    py-2.5
+                    bg-blue-600
+                    text-white
+                    font-medium
+                    text-xs
+                    leading-tight
+                    uppercase
+                    rounded
+                    shadow-md
+                    hover:bg-blue-700 hover:shadow-lg
+                    focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                    active:bg-blue-800 active:shadow-lg
+                    transition
+                    duration-150
+                    ease-in-out">Back</button>
       </div>
     </div>
     // </div>

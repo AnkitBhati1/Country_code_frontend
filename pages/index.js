@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       {
         data ? (
-          <Result data={data} />
+          <Result data={data} setData = {setData} />
         ): (
           <Search setData={setData} />
         )
