@@ -2,7 +2,6 @@ import Map from './Map';
 
 export default function Result({ data, setData }) {
 
-  console.log(data);
   const {continent,country,alpha_2, alpha_3, density,land_area,latitude , longitude, population } = data[0];
 
   return (
