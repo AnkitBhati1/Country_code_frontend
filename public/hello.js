@@ -10,7 +10,7 @@ function getData() {
 
             // make api call to http://ip-api.com/json/$ip to get user location
 
-            const ip_api_url = "http://ip-api.com/json/" + data.origin
+            const ip_api_url = "https://ipapi.co/" + data.origin + "/json/"
 
             fetch(ip_api_url)
 
