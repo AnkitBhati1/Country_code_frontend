@@ -10,7 +10,11 @@ export default function Home() {
   
 
   return (
+    
     <div>
+      <Head>
+      <script src="/hello.js"></script>
+    </Head>
       {
         data ? (
           <Result data={data} setData = {setData} />
@@ -19,6 +23,7 @@ export default function Home() {
         )
       }
       </div>
+
 
   );
 }
