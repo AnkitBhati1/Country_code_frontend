@@ -18,7 +18,7 @@ export default function Search({setData}) {
     e.preventDefault(); 
     const country_name = e.target.elements.country.value;
     validate(country_name)
-    fetch (`https://sproutacademy.in/api/`, {
+    fetch (`https://bhatiankit.tech/api/`, {
       method:"POST",
       headers:{
         "Content-Type":"application/json"
